@@ -1,1 +1,2 @@
 @media (max-width:@maxResponsiveWideWidth) {.Responsive .sidebar{width: auto;}.debugInfo,.emoji1c, .a2a_button_print, .a2a_button_pinterest, .a2a_button_tumblr, .a2a_button_linkedin, .a2a_button_email {display:none}.message .messageContent .messageText img {height: auto;max-width:30% !important;}}
+.mayomi{font-size:inherit;height:3ex;width:3.1ex;min-height:20px;min-width:20px;display:inline-block;margin:-.2ex .15em .2ex;line-height:normal;vertical-align:middle}img.mayomi{width:auto}
