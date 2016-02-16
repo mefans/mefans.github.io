@@ -3,4 +3,4 @@ var Nanobar=function(){var c,d,e,f,g,h,k={width:"100%",height:"3px",zIndex:9999,
 a;this.el.style.width=this.width+"%"};h=function(){var a=new d(this);this.bars.unshift(a)};d=function(a){this.el=document.createElement("div");this.el.style.backgroundColor=a.opts.bg;this.here=this.width=0;this.moving=!1;this.cont=a;c(this.el,l);a.el.appendChild(this.el)};d.prototype.go=function(a){a?(this.here=a,this.moving||(this.moving=!0,f.call(this))):this.moving&&f.call(this)};e=function(a){a=this.opts=a||{};var b;a.bg=a.bg||"#fd6440";this.bars=[];b=this.el=document.createElement("div");c(this.el,
 k);a.id&&(b.id=a.id);b.style.position=a.target?"relative":"fixed";a.target?a.target.insertBefore(b,a.target.firstChild):document.getElementsByTagName("body")[0].appendChild(b);h.call(this)};e.prototype.go=function(a){this.bars[0].go(a);100==a&&h.call(this)};return e}();
 var nanobar = new Nanobar();nanobar.go(30);nanobar.go(60);nanobar.go(100);
-//]]>db3131
+//]]>
