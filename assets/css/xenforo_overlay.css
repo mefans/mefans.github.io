@@ -1,0 +1,468 @@
+/* All overlays must have this */
+.xenOverlay
+{
+	display: none;
+	z-index: 10000;
+	width: 90%;
+	box-sizing: border-box;
+	max-width: {xen:calc '@overlayFormWidth + 90'}px; /*calc: 90=overlay padding+borders*/
+}
+
+	.xenOverlay .overlayScroll
+	{
+		max-height: 400px;
+		overflow: auto;
+	}
+	
+	.xenOverlay .overlayScroll.ltr
+	{
+		direction: ltr;
+	}
+	
+	.xenOverlay .overlayScroll .sortable-placeholder
+	{
+		background-color: @primaryLighter;
+	}
+	
+	.xenOverlay .overlayContain
+	{
+		overflow-x: auto;
+	}
+	
+	.xenOverlay .overlayContain.ltr
+	{
+		direction: ltr;
+	}
+
+.overlayOnly /* needs a bit more specificity over regular buttons */
+{
+	display: none !important;
+}
+
+	.xenOverlay .overlayOnly
+	{
+		display: block !important;
+	}
+	
+	.xenOverlay input.overlayOnly,
+	.xenOverlay button.overlayOnly,
+	.xenOverlay a.overlayOnly
+	{
+		display: inline !important;
+	}
+	
+	.xenOverlay a.close 
+	{
+		@property "overlayCloseControl";
+		background-image: url('@imagePath/xenforo/overlay/close.png');
+		position: absolute;
+		right: 4px;
+		top: 4px;
+		cursor: pointer;
+		width: 35px;
+		height: 35px;
+		@property "/overlayCloseControl";
+	}
+	
+.xenOverlay .nonOverlayOnly
+{
+	display: none !important;
+}
+
+/* Generic form overlays */
+
+.xenOverlay .formOverlay
+{
+	@property "formOverlay";
+	color: #eee;
+	background: rgba(0,0,0, 0.75);
+	padding: 15px 25px;
+	border: 20px solid rgba(0,0,0, 0.25);
+	border-radius: 20px;
+	box-shadow: 0px 25px 50px rgba(0,0,0, 0.5);
+	_zoom: 1;
+	@property "/formOverlay";
+	margin: 0;
+}
+
+	.Touch .xenOverlay .formOverlay
+	{
+		background: {xen:helper unrgba, @formOverlay.background-color};
+		box-shadow: none;
+	}
+
+	.xenOverlay .formOverlay a.muted,
+	.xenOverlay .formOverlay .muted a
+	{
+		color: @mutedTextColor;
+	}
+
+	.xenOverlay .formOverlay .heading
+	{
+		@property "formOverlayHeading";
+		font-weight: bold;
+		font-size: 12pt;
+		color: @primaryLightest;
+		background-color: @primaryMedium;
+		padding: 5px 10px;
+		margin-bottom: 10px;
+		border: 1px solid @primaryDark;
+		border-radius: 5px;
+		@property "/formOverlayHeading";
+	}
+
+	.xenOverlay .formOverlay .subHeading
+	{
+		@property "formOverlaySubHeading";
+		font-weight: bold;
+		font-size: 11px;
+		color: @primaryLightest;
+		background-color: @primaryDark;
+		padding: 5px 10px;
+		margin-bottom: 10px;
+		border: 1px solid @primaryMedium;
+		border-radius: 3px;
+		@property "/formOverlaySubHeading";
+	}
+	
+	.xenOverlay .formOverlay .textHeading
+	{
+		@property "formOverlayTextHeading";
+		color: @primaryLightest;
+		@property "/formOverlayTextHeading";
+	}
+	
+	.xenOverlay .formOverlay > p
+	{
+		padding-left: @formOverlayHeading.padding-left;
+		padding-right: @formOverlayHeading.padding-right;
+	}
+
+	.xenOverlay .formOverlay .textCtrl
+	{
+		@property "formOverlayTextCtrl";
+		color: @primaryLightest;
+		background-color: black;
+		border-color: @primaryLighter;
+		@property "/formOverlayTextCtrl";
+	}
+
+	.xenOverlay .formOverlay .textCtrl option
+	{
+		@property "formOverlayTextCtrl.background";
+		background-color: black;
+		@property "/formOverlayTextCtrl.background";
+	}
+
+	.xenOverlay .formOverlay .textCtrl:focus,
+	.xenOverlay .formOverlay .textCtrl.Focus
+	{
+		@property "formOverlayTextCtrlFocus";
+		background: @primaryDarker none;
+		@property "/formOverlayTextCtrlFocus";
+	}
+
+	.xenOverlay .formOverlay .textCtrl:focus option
+	{
+		@property "formOverlayTextCtrlFocus.background";
+		background: @primaryDarker none;
+		@property "/formOverlayTextCtrlFocus.background";
+	}
+
+	.xenOverlay .formOverlay .textCtrl.disabled
+	{
+		@property "formOverlayTextCtrlDisabled";
+		background: rgba(0,0,0, 0.25);
+		@property "/formOverlayTextCtrlDisabled";
+	}
+
+	.xenOverlay .formOverlay .textCtrl.disabled option
+	{
+		@property "formOverlayTextCtrlDisabled.background";
+		background: rgba(0,0,0, 0.25);
+		@property "/formOverlayTextCtrlDisabled.background";
+	}
+
+	.xenOverlay .formOverlay .textCtrl.prompt
+	{
+		@property "formOverlayTextCtrlPrompt";
+		color: rgb(160,160,160);
+		@property "/formOverlayTextCtrlPrompt";
+	}
+
+	.xenOverlay .formOverlay .ctrlUnit > dt dfn,
+	.xenOverlay .formOverlay .ctrlUnit > dd li .hint,
+	.xenOverlay .formOverlay .ctrlUnit > dd .explain
+	{
+		@property "formOverlayLabelHint";
+		color: #bbb;
+		@property "/formOverlayLabelHint";
+	}
+
+	.xenOverlay .formOverlay a
+	{
+		@property "formOverlayLink";
+		color: #fff;
+		@property "/formOverlayLink";
+	}
+
+		.xenOverlay .formOverlay a.button
+		{
+			@property "formOverlayButton";
+			color: black;
+			@property "/formOverlayButton";
+		}
+
+	.xenOverlay .formOverlay .avatar img,
+	.xenOverlay .formOverlay .avatar .img,
+	.xenOverlay .formOverlay .avatarCropper
+	{
+		background-color: transparent;
+	}
+	
+	/* tabs in form overlay */
+	
+	.xenOverlay .formOverlay .tabs /* the actual tabs */
+	{
+		@property "formOverlayTabs";
+		background: transparent none;
+		border-color: @primaryLighter;
+		@property "/formOverlayTabs";
+	}
+
+		.xenOverlay .formOverlay .tabs a
+		{
+			@property "formOverlayTab";
+			background: transparent none;
+			border-color: @primaryLighter;
+			@property "/formOverlayTab";
+		}
+		
+			.xenOverlay .formOverlay .tabs a:hover
+			{
+				@property "formOverlayTabHover";
+				background: rgba(255,255,255, 0.25);
+				@property "/formOverlayTabHover";
+			}
+			
+			.xenOverlay .formOverlay .tabs .active a
+			{
+				@property "formOverlayTabActive";
+				background-color: black;
+				@property "/formOverlayTabActive";
+			}
+			
+	.xenOverlay .formOverlay .tabPanel /* panels switched with the tab controls */
+	{
+		@property "formOverlayTabPanel";
+		background: transparent url('@imagePath/xenforo/color-picker/panel.png') repeat-x top;
+		border: 1px solid @primaryLighter;
+		@property "/formOverlayTabPanel";
+	}
+
+
+/* Generic overlays */
+
+.xenOverlay .section,
+.xenOverlay .sectionMain
+{
+	@property "overlaySection";
+	padding: 0px;
+	border: 20px solid @primaryDarker;
+	border-radius: 20px;
+	box-shadow: 0px 25px 50px rgba(0,0,0, 0.5);
+	@property "/overlaySection";
+	
+	border-color: {xen:helper rgba, @overlaySection.border-color, 0.5};
+}
+
+	.Touch .xenOverlay .section,
+	.Touch .xenOverlay .sectionMain
+	{
+		border-color: {xen:helper unrgba, @overlaySection.border-color};
+		box-shadow: none;
+	}
+
+.xenOverlay > .section,
+.xenOverlay > .sectionMain
+{
+	background: none;
+	margin: 0;
+}
+
+	.xenOverlay .section .heading,
+	.xenOverlay .sectionMain .heading
+	{
+		border-radius: 0;
+		margin-bottom: 0;
+	}
+
+	.xenOverlay .section .subHeading,
+	.xenOverlay .sectionMain .subHeading
+	{
+		margin-top: 0;
+	}
+
+	.xenOverlay .section .sectionFooter,
+	.xenOverlay .sectionMain .sectionFooter
+	{
+		overflow: hidden; zoom: 1;
+	}
+		
+		.xenOverlay .sectionFooter .buttonContainer
+		{
+			line-height: 31px;
+		}
+	
+		.xenOverlay .sectionFooter .button,
+		.xenOverlay .sectionFooter .buttonContainer
+		{
+			min-width: 75px;
+			*min-width: 0;
+			float: right;
+			margin-left: 5px;
+		}
+		
+			.xenOverlay .sectionFooter .buttonContainer .button
+			{
+				float: none;
+				margin-left: 0;
+			}
+
+/* The AJAX progress indicator overlay */
+
+#AjaxProgress.xenOverlay
+{
+	width: 100%;
+	max-width: none;
+	overflow: hidden; zoom: 1;
+}
+
+	#AjaxProgress.xenOverlay .content
+	{
+		@property "ajaxProgress";
+		background: @contentText url('@imagePath/xenforo/widgets/ajaxload.info_FFFFFF_facebook.gif') no-repeat center center;
+		border-bottom-left-radius: 10px;
+		float: right;
+		width: 85px;
+		height: 30px;
+		@property "/ajaxProgress";
+	}
+	
+		.Touch #AjaxProgress.xenOverlay .content
+		{
+			background-color: {xen:helper unrgba, @ajaxProgress.background-color};
+		}
+
+/* Timed message for redirects */
+
+.xenOverlay.timedMessage
+{
+	@property "redirectMessage";
+	color: black;
+	background: transparent url('@imagePath/xenforo/overlay/timed-message.png') repeat-x;
+	border-bottom: 1px solid black;
+	max-width: none;
+	width: 100%;
+	@property "/redirectMessage";
+}
+
+	.xenOverlay.timedMessage .content
+	{
+		@property "redirectMessageContent";
+		font-size: 18pt;
+		padding: 30px;
+		text-align: center;
+		@property "/redirectMessageContent";
+	}
+	
+/* Growl-style message */
+
+#StackAlerts
+{
+	position: fixed;
+	bottom: 70px;
+	left: 35px;
+	z-index: 9999; /* in front of the expose mask */
+}
+
+	#StackAlerts .stackAlert
+	{
+		position: relative;
+		width: 270px;
+		border: 1px solid @primaryLight;
+		border-radius: 5px;
+		box-shadow: 2px 2px 5px 0 rgba(0,0,0, 0.4);
+		margin-top: 5px;
+	}
+
+		#StackAlerts .stackAlertContent
+		{
+			padding: 10px;
+			padding-right: 30px;
+			border-radius: 4px;
+			border: solid 2px @primaryLighterStill;
+			background: {xen:helper rgba, @primaryLightest, 0.9};
+			font-size: 11px;
+			font-weight: bold;
+		}
+	
+/* Inline Editor */
+
+.xenOverlay .section .messageContainer
+{
+	padding: 0;
+}
+
+.xenOverlay .section .messageContainer .mceLayout
+{
+	border: none;	
+}
+
+.xenOverlay .section .messageContainer tr.mceFirst td.mceFirst
+{
+	border-top: none;
+}
+
+.xenOverlay .section .messageContainer tr.mceLast td.mceLast,
+.xenOverlay .section .messageContaner tr.mceLast td.mceIframeContainer
+{
+	border-bottom: none;
+}
+
+.xenOverlay .section .textCtrl.MessageEditor,
+.xenOverlay .section .mceLayout,
+.xenOverlay .section .bbCodeEditorContainer textarea
+{
+	width: 100% !important;
+	min-height: 260px;
+	_height: 260px;
+	box-sizing: border-box;
+}
+
+<xen:if is="@enableResponsive">
+@media (max-width:@maxResponsiveMediumWidth)
+{
+	.Responsive .xenOverlay
+	{
+		width: 100%;
+	}
+	
+	.Responsive .xenOverlay .formOverlay,
+	.Responsive .xenOverlay .section,
+	.Responsive .xenOverlay .sectionMain
+	{
+		border-radius: 10px;
+		border-width: 10px;
+	}
+	
+	.Responsive .xenOverlay a.close 
+	{
+		top: 0;
+		right: 0;
+		width: 28px;
+		height: 28px;
+		background-size: 100% 100%;
+	}
+}
+</xen:if>
