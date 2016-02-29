@@ -1,0 +1,14 @@
+@font-face {
+font-family: 'M';
+font-style: normal;
+font-weight: normal;
+src: local('M'), url('../fonts/M.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'MM';
+font-style: normal;
+font-weight: normal;
+src: local('MM'), url('../fonts/MM.woff') format('woff');
+}
