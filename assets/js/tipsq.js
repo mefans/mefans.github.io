@@ -12,6 +12,20 @@ QMiya[3] = "Perkara yang paling sedikit di dunia ini ialah mendengar dan memaham
 QMiya[4] = "Start with reading <i>Miya</i>";
 QMiya[5] = "Kuncinya adalah: Baca, Pahami, Ikuti <i>Miya</i>";
 QMiya[6] = "Orang yang tidak pernah membaca adalah orang yang tidak banyak tahu, orang yang tidak banyak tahu sangat dekat dengan kebodohan, dan kebodohan sangat dekat dengan kemiskinan <i>Tantowi Yahya</i>";
+QMiya[] = " ";
+QMiya[] = " ";
+QMiya[] = " ";
+QMiya[] = " ";
+QMiya[] = " ";
+QMiya[] = " ";
+QMiya[] = " ";
+QMiya[] = " ";
+QMiya[] = " ";
+QMiya[] = " ";
+QMiya[] = " ";
+QMiya[] = " ";
+QMiya[] = " ";
+
 
 
 
