@@ -116,7 +116,11 @@ QMiya[106] = "Just because something isn’t happening for you right now doesn�
 QMiya[107] = "Work until you no longer have to introduce yourself."
 QMiya[108] = "You can’t laugh at the same joke again and again, but why do you keep crying over the same thing over and over again?"
 QMiya[109] = "When your past calls, don’t answer. It has nothing new to say."
-//QMiya[110] = ""
+QMiya[110] = "Bila engkau dapat bertutur kata manis kepada atasanmu, mengapa kau tak mampu melakukannya kepada orang tuamu? "
+QMiya[111] = "Alasan mengapa seorang anak perempuan mencintai ayahnya ialah bahwa setidaknya ada satu lelaki di dunia ini yang tidak akan pernah menyakitinya"
+//QMiya[112] = ""
+//QMiya[113] = ""
+
 
   var mf = QMiya.length;
     var whichQMiya=Math.round(Math.random()*(mf-1));
