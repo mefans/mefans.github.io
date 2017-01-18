@@ -118,7 +118,7 @@ QMiya[108] = "You can’t laugh at the same joke again and again, but why do you
 QMiya[109] = "When your past calls, don’t answer. It has nothing new to say."
 QMiya[110] = "Bila engkau dapat bertutur kata manis kepada atasanmu, mengapa kau tak mampu melakukannya kepada orang tuamu? "
 QMiya[111] = "Alasan mengapa seorang anak perempuan mencintai ayahnya ialah bahwa setidaknya ada satu lelaki di dunia ini yang tidak akan pernah menyakitinya"
-//QMiya[112] = ""
+QMiya[112] = "Yang indah hanya sementara<br /> Yang abadi adalah kenangan <br />Yang ikhlas hanya dari hati <br />Yang tulus hanya dari sanubari<br/> <i>catHy</i>"
 //QMiya[113] = ""
 
 
