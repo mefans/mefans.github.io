@@ -7,7 +7,7 @@ viewBox="0 0 4795 1028"
  <defs>
   <font id="FontID0" horiz-adv-x="590" font-variant="normal" style="fill-rule:nonzero" font-weight="400,700">
 	<font-face 
-		font-family="Fira Sans">
+		font-family="sans-serif">
 	</font-face>
    <missing-glyph><path d="M0 0z"/></missing-glyph>
    <glyph unicode="U" horiz-adv-x="662"><path d="M572.001 220.998c0,-46.002 -9.5044,-86.5001 -28.5049,-121.494 -19.0005,-35.0026 -46.6618,-62.3382 -82.9923,-82.0068 -36.3389,-19.6602 -79.8353,-29.4987 -130.506,-29.4987 -76.6616,0 -135.834,21.1719 -177.502,63.4991 -41.659,42.3355 -62.4969,98.8358 -62.4969,169.501l0 468.004 95.0023 0 0 -461.005c0,-53.3265 12.0016,-93.3319 35.9965,-119.999 24.0032,-26.6674 60.3337,-39.997 109,-39.997 49.3344,0 85.999,13.1625 110.002,39.4959 24.0032,26.3334 35.9965,66.5058 35.9965,120.5l0 461.005 96.0045 0 0 -468.004z"/></glyph>
@@ -31,7 +31,7 @@ viewBox="0 0 4795 1028"
   </font>
   <style type="text/css">
    <![CDATA[
-    @font-face { font-family:"Fira Sans";src:url("#FontID0") format(svg)}
+    @font-face { font-family:"sans-serif";src:url("#FontID0") format(svg)}
     .str0 {stroke:#332C2B;stroke-width:0.899948}
     .fil4 {fill:none}
     .fil5 {fill:#FEFEFE}
@@ -40,8 +40,8 @@ viewBox="0 0 4795 1028"
     .fil6 {fill:#f11616}
     .fil1 {fill:#F4F1E8}
     .fil3 {fill:#332C2B;fill-rule:nonzero}
-    .fnt1 {font-weight:normal;font-size:141.41px;font-family:'Fira Sans'}
-    .fnt0 {font-weight:bold;font-size:716.75px;font-family:'Fira Sans'}
+    .fnt1 {font-weight:normal;font-size:141.41px;font-family:'sans-serif'}
+    .fnt0 {font-weight:bold;font-size:716.75px;font-family:'sans-serif'}
    ]]>
   </style>
     <clipPath id="id0" style="clip-rule:nonzero">
