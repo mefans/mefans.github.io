@@ -172,8 +172,7 @@ QMiya[162] = "Alat penghemat kerja yang paling populer sampai saat ini masih tet
 QMiya[163] = "Jangan memberi nasehat kalau tidak diminta. <i>Erasmus</i>"
 QMiya[164] = "Manusia mudah dibohongi oleh orang yang dicintainya. <i>Molire</i>"
 QMiya[165] = "Sebelum menulis, belajarlah berpikir dulu. <i>Boileau</i>"
-QMiya[166] = "Orang yang berjiwa cukupan, merasa bisa menulis dengan hebat. Orang yang berjiwa besar merasa bisa menulis cukupan. <i>La Bruyère</i>
-"
+QMiya[166] = "Orang yang berjiwa cukupan, merasa bisa menulis dengan hebat. Orang yang berjiwa besar merasa bisa menulis cukupan. <i>La Bruyère</i>"
 QMiya[167] = "Kemenangan yang paling indah adalah bisa menaklukkan hati sendiri. <i>La Fontaine</i>"
 QMiya[168] = "Tidak ada yang selembut dan sekeras hati. <i>G.C. Lichtenberg</i>"
 QMiya[169] = "Lebih baik mengerti sedikit daripada salah mengerti. <i>A. France</i>"
