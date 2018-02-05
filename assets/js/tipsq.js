@@ -4,7 +4,7 @@
 @ Auth : Miya - http://mifans.web.id/f/2/#info
 @ Email: miya@mifans.web.id
 **/
-document.write("<div id='div_QMiya'></div>");	
+document.write("<div class='QMiya' id='QMiya'><sup class='fa fa-quote-left'></sup>");	
 	var QMiya = new Array();
 QMiya[0] = "Jangan menertawakan impian orang lain <i>mimin</i>";
 QMiya[1] = "Ajarkan walau satu ayat";
@@ -137,4 +137,4 @@ QMiya[118] = "Ayah tak menyusuimu, tapi setiap tetesan keringat Ayah menjadi air
   var mf = QMiya.length;
     var whichQMiya=Math.round(Math.random()*(mf-1));
 function showQMiya(){document.write(QMiya[whichQMiya]);}
-showQMiya();
+showQMiya();document.write(" <sub><i class='fa fa-quote-right'></i></sub></div>");
