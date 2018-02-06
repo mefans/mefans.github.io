@@ -4,7 +4,7 @@
 @ Auth : Miya - http://mifans.web.id/f/2/#info
 @ Email: miya@mifans.web.id
 **/
-document.write("<div id='div_QMiya'></div>");	
+document.write("<div class='QMiya' id='QMiya'><sup class='fa fa-quote-left'></sup>"); 
 	var QMiya = new Array();
 QMiya[0] = "Jangan menertawakan impian orang lain <i>mimin</i>";
 QMiya[1] = "Ajarkan walau satu ayat";
@@ -181,10 +181,10 @@ QMiya[171] = "Saya tak hanya menggunakan semua kecerdasan yang dimiliki otak mel
 QMiya[172] = "Yang kalah adalah wujud hukuman atas kegagalan. Pemenang adalah penghargaan atas kesuksesannya. <i>Bob Gilbert</i>"
 QMiya[173] = "Bila Anda mengatakan apa yang Anda pikirkan, jangan harap hanya mendengar apa yang Anda sukai. <i>Malcom S. Forbes</i>"
 QMiya[174] = "Kesulitan itu ibarat seorang bayi. Hanya bisa berkembang dengan cara merawatnya. <i>Douglas Jerrold</i>."
-//QMiya[175] = ""
-//QMiya[176] = ""
-//QMiya[177] = ""
-//QMiya[178] = ""
+QMiya[175] = "Jika tidak bisa mencipta bukan berarti menghalangimu untuk mencontoh. Tak perlu malu, apalagi mencontoh yang baik. <i>Ri_Vans</i>"
+QMiya[176] = "Kamu tidak akan pernah menjadi yang terbaik jika hanya bermimpi, tapi berusahalah sampai pada limit maksimal, itulah yang terbaik <i>Ri_Vans</i>"
+QMiya[177] = "kita harus sabar, karena sabar adalah fitur dari manusia.. <i>inisial M</i>"
+QMiya[178] = "Ayah tak menyusuimu, tapi setiap tetesan keringat Ayah menjadi air susu yang membesarkanmu..... <i>xdain</i>"
 //QMiya[179] = ""
 //QMiya[190] = ""
 //QMiya[191] = ""
@@ -211,4 +211,4 @@ QMiya[174] = "Kesulitan itu ibarat seorang bayi. Hanya bisa berkembang dengan ca
   var mf = QMiya.length;
     var whichQMiya=Math.round(Math.random()*(mf-1));
 function showQMiya(){document.write(QMiya[whichQMiya]);}
-showQMiya();
+showQMiya();document.write(" <sub><i class='fa fa-quote-right'></i></sub></div>");
